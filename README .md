@@ -18,6 +18,9 @@ This project is designed as a **frontend interview project** to demonstrate UI d
 - 📱 Fully responsive layout
 - 🎨 Smooth animations and visual feedback
 
+LIVE DEPLOYMENT LINK:
+https://adhi-svg.github.io/smart-expense-tracker/
+
 ---
 
 ## 🛠️ Tech Stack
@@ -33,4 +36,5 @@ This project is designed as a **frontend interview project** to demonstrate UI d
 ---
 
 ## 📂 Project Structure
+
 
