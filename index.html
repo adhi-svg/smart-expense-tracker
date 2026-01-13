@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Coin Vault Background -->
+    <div class="coin-vault">
+        <div class="coin coin-1">₹</div>
+        <div class="coin coin-2">₹</div>
+        <div class="coin coin-3">₹</div>
+        <div class="coin coin-4">₹</div>
+        <div class="coin coin-5">₹</div>
+        <div class="coin coin-6">₹</div>
+        <div class="coin coin-7">₹</div>
+        <div class="coin coin-8">₹</div>
+        <div class="coin coin-9">₹</div>
+        <div class="coin coin-10">₹</div>
+        <div class="coin coin-11">₹</div>
+        <div class="coin coin-12">₹</div>
+        <div class="coin coin-13">₹</div>
+        <div class="coin coin-14">₹</div>
+        <div class="coin coin-15">₹</div>
+        <div class="coin coin-16">₹</div>
+        <div class="coin coin-17">₹</div>
+        <div class="coin coin-18">₹</div>
+        <div class="coin coin-19">₹</div>
+        <div class="coin coin-20">₹</div>
+        <div class="coin coin-21">₹</div>
+        <div class="coin coin-22">₹</div>
+        <div class="coin coin-23">₹</div>
+        <div class="coin coin-24">₹</div>
+        <div class="coin coin-25">₹</div>
+        <div class="coin coin-26">₹</div>
+        <div class="coin coin-27">₹</div>
+        <div class="coin coin-28">₹</div>
+        <div class="coin coin-29">₹</div>
+        <div class="coin coin-30">₹</div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><span class="rupee-header">₹</span>💰 Smart Expense Tracker<span class="rupee-header">₹</span></h1>
+            <p class="subtitle">Track your expenses efficiently with advanced analytics</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <h2>Add New Expense</h2>
+                <form id="expenseForm" class="form-group">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="amount">Amount (₹)</label>
+                            <input 
+                                type="number" 
+                                id="amount" 
+                                placeholder="Enter amount"
+                                min="0"
+                                step="0.01"
+                                required
+                            >
+                            <span class="error-message" id="amountError"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="category">Category</label>
+                            <select id="category" required>
+                                <option value="" disabled selected>Select category</option>
+                                <option value="Food">🍔 Food</option>
+                                <option value="Travel">✈️ Travel</option>
+                                <option value="Shopping">🛍️ Shopping</option>
+                                <option value="Bills">📄 Bills</option>
+                                <option value="Others">📌 Others</option>
+                            </select>
+                            <span class="error-message" id="categoryError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Add Expense</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <h2>Filter Expenses</h2>
+                <select id="filterCategory" class="filter-dropdown">
+                    <option value="All">All Categories</option>
+                    <option value="Food">🍔 Food</option>
+                    <option value="Travel">✈️ Travel</option>
+                    <option value="Shopping">🛍️ Shopping</option>
+                    <option value="Bills">📄 Bills</option>
+                    <option value="Others">📌 Others</option>
+                </select>
+            </section>
+
+            <!-- Total Display -->
+            <section class="total-section">
+                <div class="total-card">
+                    <h3><span class="rupee-glow">₹</span> Total Expenses</h3>
+                    <p class="total-amount"><span class="rupee-animate">₹</span><span id="totalAmount">0.00</span></p>
+                    <p class="expense-count" id="expenseCount">0 expenses</p>
+                </div>
+            </section>
+
+            <!-- Expenses List -->
+            <section class="expenses-section">
+                <h2>Your Expenses</h2>
+                <div id="expensesList" class="expenses-list">
+                    <div class="empty-state">
+                        <p>📭 No expenses yet. Add one to get started!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Smart Expense Tracker | Track wisely, spend wisely</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
